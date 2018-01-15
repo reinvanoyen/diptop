@@ -1,0 +1,25 @@
+{
+  "name": "highdipper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "build": "./node_modules/.bin/babel src --presets env --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reinvanoyen/highdipper.git"
+  },
+  "author": "Rein Van Oyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reinvanoyen/highdipper/issues"
+  },
+  "homepage": "https://github.com/reinvanoyen/highdipper#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "talib": "^1.0.3"
+  }
+}

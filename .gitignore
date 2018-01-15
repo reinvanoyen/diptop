@@ -1,0 +1,5 @@
+.vagrant/
+puppet/manifests/*.swp
+.idea/
+config.json
+node_modules/
