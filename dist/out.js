@@ -22,11 +22,11 @@ out.log = function (msg, color) {
 
 out.changeBlock = function (data) {
   if (data[data.length - 1] > 0) {
-    out.log('[CDL] ' + ' '.repeat(Math.abs(data[data.length - 1])), out.colors.greenBg);
+    out.log(' '.repeat(Math.abs(data[data.length - 1])), out.colors.greenBg);
   } else if (data[data.length - 1] < 0) {
-    out.log('[CDL] ' + ' '.repeat(Math.abs(data[data.length - 1])), out.colors.redBg);
+    out.log(' '.repeat(Math.abs(data[data.length - 1])), out.colors.redBg);
   } else {
-    out.log('[CDL]');
+    out.log('No change');
   }
 };
 
